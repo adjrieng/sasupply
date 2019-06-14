@@ -5,6 +5,11 @@
     display: none;
   }
 
+  body .headline {
+    align-self: center;
+    width: auto !important;
+  }
+
   body .products {
     display: block;
     flex-direction: column;
