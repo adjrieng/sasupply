@@ -4,6 +4,28 @@
   ul.mobile-nav.container2 {
     display: none;
   }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    width: 960px;
+    height: 750px;
+    margin-bottom: 3rem;
+  }
+
+  .products .product {
+    display: flex;
+    flex-shrink: 0.5;
+    background-color: lightblue;
+    width: 47% !important;
+    padding-top: 5rem;
+    background-color: white;
+    border: 0.4px solid black;
+    flex-direction: column;
+  }
 }
 
 /* hide element on screens that are 1024px or less */
@@ -163,8 +185,81 @@ ul.mobile-nav.container2 {
 }
 
 /* Main Sections */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin-bottom: 3rem;
+}
+
+.products .product {
+  display: flex;
+  flex-shrink: 0.5;
+  background-color: lightblue;
+  width: 30%;
+  background-color: white;
+  border: 0.4px solid black;
+  flex-direction: column;
+}
+
+.product-image {
+  display: flex;
+  align-self: center;
+  height: 9rem;
+  width: 50%;
+  padding: 2rem;
+  flex-direction: row;
+}
+
+.product-image img {
+  display: flex;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+}
 
 
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+  background-color: black;
+}
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 35%;
+  padding-bottom: 4rem;
+}
+
+.info span {
+  display: inline-block;
+  flex-direction: column;
+  width: auto;
+}
+
+.title {
+  display: block;
+  flex-direction: column;
+  background-color: black;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+
+}
 
 /* Inventory Section I & II */
 
