@@ -7,7 +7,9 @@
 
   body .headline {
     align-self: center;
-    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: -webkit-fill-available
   }
 
   body .products {
@@ -57,6 +59,15 @@
     color: black;
     width: 90%;
     padding-bottom: 4rem;
+  }
+
+  body .container {
+    align-self: center;
+  }
+
+  footer {
+    display: grid;
+    justify-content: center;
   }
 }
 
@@ -153,10 +164,10 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 10px 0 0;
+  //padding: 0 10px 0 0;
   font-weight: 600;
   background-color: firebrick;
-    width: 100%;
+  /width: 100%;
 }
 
 nav ul {
