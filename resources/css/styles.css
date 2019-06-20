@@ -7,9 +7,9 @@
 
   body .headline {
     align-self: center;
-    margin-top: 40% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    width: -webkit-fill-available
   }
 
   body .products {
@@ -21,7 +21,6 @@
     width: 100% !important;
     height: fit-content;
     margin-bottom: 3rem;
-    font-size: 2rem;
   }
 
   body .products .product {
@@ -29,18 +28,20 @@
     flex-shrink: 0.5;
     background-color: lightblue;
     width: 90% !important;
-    padding-top: 10%;
+    padding-top: 25%;
     margin-left: 5%;
     margin-bottom: 5%;
     background-color: white;
+    border: 0.4px solid black;
     flex-direction: column;
   }
 
   body .product-image {
     display: flex;
     align-self: center;
+    height: 9rem;
     width: 50%;
-    padding: 0rem 0rem 3rem 0rem !important;
+    padding: 0rem 2rem 15rem 2rem !important;
     flex-direction: row;
     justify-content: center;
   }
@@ -66,18 +67,9 @@
 
   footer {
     display: grid;
-    justify-content: stretch;
-  }
-
-  footer span {
-    margin-left: 39%;
-  }
-
-  footer .footerText {
-    display: none;
+    justify-content: center;
   }
 }
-
 
 /* hide element on screens that are 1024px or greater */
 @media all and (min-width: 641px) and (max-width: 1024px) {
@@ -91,9 +83,8 @@
     flex-wrap: wrap;
     align-self: center;
     align-items: center;
-    justify-content: space-between !important;
     width: 960px;
-    height: 680px;
+    height: 780px;
     margin-bottom: 3rem;
   }
 
@@ -104,6 +95,7 @@
     width: 47% !important;
     padding-top: 5rem;
     background-color: white;
+    border: 0.4px solid black;
     flex-direction: column;
   }
 
@@ -128,11 +120,10 @@
 /* Universal */
 html {
   margin: 0;
-  background-color: white;
+  background-color: black;
   font-family: Helvetica;
   font-size: 18px;
   color: white;
-  line-height: 1.4;
   //opacity: 0.9;
 }
 
@@ -167,9 +158,6 @@ h4 {
   margin: 0 0 20px 0;
 }
 
-p {
-  text-align: justify;
-}
 
 /* Universal - Navigation+ */
 nav {
@@ -178,15 +166,8 @@ nav {
   justify-content: flex-start;
   //padding: 0 10px 0 0;
   font-weight: 600;
-  background-color: none;
-  //width: 100%;
-}
-
-nav span {
-  display: flex;
-  justify-content: flex-start;
-  align-self: center;
-  margin-left: 1rem;
+  background-color: firebrick;
+  /width: 100%;
 }
 
 nav ul {
@@ -194,95 +175,40 @@ nav ul {
   flex-direction: row;
   align-self: center;
   justify-content: center;
-  padding: 0;
+  padding: 0 10px 0 0;
   font-weight: 600;
   width: 960px;
-  //background-color: cadetblue;
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-  text-shadow: 1px 1px cadetblue;
+
 }
 
 nav ul li {
   display: block;
   flex: 0 1 auto;
-  padding: 1rem 2rem 1rem 0rem;
+  padding: 0.75rem 0 0.75rem 0.75rem;
   font-weight: 600;
 }
 
 ul.mobile-nav.container2 {
   align-items: stretch;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-ul img {
-  height: 1.5rem;
-}
-
-ul .logoImg {
-  padding-right: 1%;
-}
-
-ul .logoTxt {
-  width: fit-content;
-  margin-right: 33%;
-}
 
 /* Top Div - Should be header */
-.about {
-  display: flex;
-  flex-direction: column;
-  color: black;
-  text-align: center;
-}
-
-.about h2 {
-  display: block;
-  font-weight: bolder;
-  line-height: 1.4rem;
-  padding-bottom: 1rem;
-}
-
-.about span {
-  display: block;
-  font-weight: bold;
-  font-style: italic;
-  opacity: 0.9;
-  line-height: 1.2rem;
-}
-
-.about p {
-  display: block;
-  flex-direction: row;
-  justify-content: center;
-  width: 90%;
-  max-width: 960px;
-  margin-top: 1rem;
-  align-self: center;
-  padding: 0rem 2rem;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
 .company {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .company .container {
   display: flex;
   align-items: center;
-  padding: 1rem 0rem;
-  background-color: cadetblue;
-}
-
-.company .container span {
-  display: ;
-  align-items: ;
-  padding: ;
+  padding: 0.66rem 0rem;
 }
 
 .company .container img {
@@ -294,19 +220,17 @@ ul .logoTxt {
 .main-banner {
   display: flex;
   background-image:
-  url('../images/glasses-bg.png');
+  url('../images/moto.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 31rem;
+  height: 25rem;
   align-content: center;
-  margin-top: -3rem;
 }
 
 .main-banner .container {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 960px;
   height: auto;
 }
@@ -315,19 +239,10 @@ ul .logoTxt {
   display: inline-block;
   justify-content: center;
   font-weight: bold;
-  line-height: 1.2;
   margin-top: 9rem;
-  //margin-right: -2rem;
-  width: 24rem;
-  padding: 1.5rem 5rem;
-  //background-color: white;
-  //color: black;
-  //border-radius: 25px;
-  background-color: #ecdc81;
-  border-radius: 10% / 50%;
-  border: 0.1rem solid #295253;
-  color: #295253;
-  opacity: 0.8;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
 }
 
 .headline h4 {
@@ -355,10 +270,9 @@ ul .logoTxt {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 960px;
-  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -366,16 +280,18 @@ ul .logoTxt {
   display: flex;
   flex-shrink: 0.5;
   background-color: lightblue;
+  width: 30%;
   background-color: white;
+  border: 0.4px solid black;
   flex-direction: column;
 }
 
 .product-image {
   display: flex;
   align-self: center;
-  height: 5rem;
-  width: 5rem;
-  padding: 1.5rem;
+  height: 9rem;
+  width: 50%;
+  padding: 2rem;
   flex-direction: row;
 }
 
@@ -391,15 +307,13 @@ ul .logoTxt {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
   padding: 0.5rem 0rem;
-  color: black;
-  font-weight: bold;
+  background-color: black;
 }
 
 .business-info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 960px;
 }
 
@@ -407,7 +321,7 @@ ul .logoTxt {
   display: flex;
   flex-direction: column;
   color: black;
-  width: 42%;
+  width: 35%;
   padding-bottom: 4rem;
 }
 
@@ -420,15 +334,12 @@ ul .logoTxt {
 .title {
   display: block;
   flex-direction: column;
-  background-color: cadetblue;
-  //padding-left: 2rem;
+  background-color: black;
+  padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: white;
-  border-radius: 25px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
+
 }
 
 /* Inventory Section I & II */
@@ -438,22 +349,8 @@ ul .logoTxt {
 /* Footer */
 footer div {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 9.5rem;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 5rem;
   width: 100%;
-  color: black;
-  background-color: azure;
-  border-radius: 25px;
-}
-
-footer span {
-  padding-left: 1rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-footer span img {
-  padding-left: 3rem;
-  height: 1.5rem;
 }
